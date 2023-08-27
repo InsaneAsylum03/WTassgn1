@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Listen to the theme music</title>
+        <style>
+            body{
+                background-image: url(homebg.gif);
+                background-repeat: no-repeat;
+                background-color: paleturquoise;
+                background-size: 100%;
+            }
+            header{
+                background-color: transparent;
+                font-size:x-large;
+                text-align: center;
+                font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                color: white;
+            }
+            .zoom {
+                padding: 50px;
+                background-color: transparent;
+                transition: transform .2s; 
+                width: 200px;
+                height: 200px;
+                margin: 0 auto;
+            }
+
+            .zoom:hover {
+                transform: scale(1.2);
+            }
+            .button{
+                border-radius: 4px;
+                background-color: rgb(56, 151, 209);
+                border: none;
+                color: #FFFFFF;
+                text-align: center;
+                font-size: 28px;
+                padding: 18px;
+                width: 200px;
+                transition: all 0.5s;
+                cursor: pointer;
+                margin: 3px;
+            }
+            .button span {
+                cursor: pointer;
+                display: inline-block;
+                position: relative;
+                transition: 0.2s;
+            }
+
+            .button span:after {
+                content: '\00bb';
+                position: absolute;
+                opacity: 0;
+                top: 0;
+                right: -20px;
+                transition: 0.2s;
+            }
+
+            .button:hover span {
+                padding-right: 25px;
+            }
+
+            .button:hover span:after {
+                opacity: 1;
+                right: 0;
+            }
+        </style>
+    </head>
+    <header>
+        <a href="home.html">
+            <button style="float: left;" class="button">back</button>
+        </a>
+        <h1 style="padding-right: 100px;">Themes of the Archons</h1>
+    </header>
+    <body>
+        <a href="https://youtu.be/Oofw4zlXcNg?si=hjdh5SOnZ2FrjuNa">
+            <img class="zoom" src="venti.webp">
+        </a>
+        <a href="https://youtu.be/SBfoWTB-T_U?si=8njse4pTEnvBZKrX">
+            <img class="zoom" src="zl.webp">
+        </a>
+        <a href="https://youtu.be/uAte-2ZptaQ?si=jNnknpz5gZwp_Imn">
+            <img class="zoom" src="rs.webp">
+        </a>
+        <a href="https://youtu.be/a64fqO0qtAY?si=DUem0MFn_YDOYgOg">
+            <img class="zoom" src="nahida.webp">
+        </a>
+    </body>
+</html>

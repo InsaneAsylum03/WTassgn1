@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Theme Song Bank</title>
+        <style>
+            body{
+                background-image: url(homebg.gif);
+                background-repeat: no-repeat;
+                background-color: paleturquoise;
+                background-size: 100%;
+            }
+            .button{
+                border-radius: 4px;
+                background-color: rgb(56, 151, 209);
+                border: none;
+                color: #FFFFFF;
+                text-align: center;
+                font-size: 28px;
+                padding: 18px;
+                width: 200px;
+                transition: all 0.5s;
+                cursor: pointer;
+                margin: 3px;
+            }
+            .button span {
+                cursor: pointer;
+                display: inline-block;
+                position: relative;
+                transition: 0.2s;
+            }
+
+            .button span:after {
+                content: '\00bb';
+                position: absolute;
+                opacity: 0;
+                top: 0;
+                right: -20px;
+                transition: 0.2s;
+            }
+
+            .button:hover span {
+                padding-right: 25px;
+            }
+
+            .button:hover span:after {
+                opacity: 1;
+                right: 0;
+            }
+            header{
+                background-color: paleturquoise transparent;
+            }
+        </style>
+    </head>
+    <header>
+        <button class="button"><span>Home</span></button>
+        <a href="theme.html">
+            <button class="button"><span>Themes</span></button>
+        </a>    
+        <a href="about.html">
+            <button class="button" style="float: right;"><span>About us</span></button>
+        </a>
+    </header>
+    <body>
+        <img src="logo.png" style="padding-left: 600px; padding-top: 150px;">
+    </body>
+</html>
